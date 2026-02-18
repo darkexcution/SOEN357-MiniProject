@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Companion Super App - UX/UI Case Study</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <h1>Health Companion</h1>
+                <p class="tagline">UX/UI Case Study — Chronic Health Management</p>
+            </div>
+            <nav class="main-nav">
+                <a href="#overview">Overview</a>
+                <a href="#survey">Survey</a>
+                <a href="#survey-results">Results</a>
+                <a href="#wireframes">Wireframes</a>
+                <a href="#reflection">Reflection</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>This project explores the UX/UI design process for a mobile app helping individuals with chronic conditions manage medications, doctor appointments, and communicate with healthcare professionals.</p>
+    </section>
+
+    <section id="user-research">
+        <h2>User Research</h2>
+
+        <h3>Methods</h3>
+            <ul>
+                <li><strong>Surveys:</strong> Conducted an online survey targeting individuals with chronic health conditions to gather data on medication habits, appointment management, technology usage, 
+                    and feature preferences for a health management app.</li>
+            </ul>
+            
+    
+
+    <section id="survey">
+        <h2>Feedback Survey</h2>
+        <p>Google Form used to collect user feedback on the Health Companion Super App design and functionality.</p>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScMYOG621WDZ26yieJyM9Gf26t55ZjUj9KU8VmdufV3YpJH8Q/viewform?usp=sharing&ouid=109988633295265727189" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+
+    <section id="survey-results">
+        <h2>Survey Results</h2>
+        <div class="carousel">
+            <button class="carousel-btn prev" onclick="previousImage()">❮</button>
+            <div class="carousel-container">
+                <img id="carouselImage" src="images/age.png" alt="Survey Result">
+            </div>
+            <button class="carousel-btn next" onclick="nextImage()">❯</button>
+        </div>
+        <p id="imageName" style="text-align: center; margin-top: 10px; font-weight: bold;"></p>
+        <p style="text-align: center; margin-top: 5px;">Image <span id="currentImage">1</span> of <span id="totalImages">9</span></p>
+    </section>
+
+        <h3>Findings</h3>
+            <ul>
+                <li>Users sometimes forget medication doses or appointments due to their personal reasons </li>
+                <li>Ease of use and clear notifications are critical due to 1/3 of the users being over 45.</li>
+                <li>Communication with healthcare providers, medication usage tracking and appointment scheduling is highly valued.</li>
+                <li>Users prefer to be reminded when they are about to miss a medication dose or appointment.</li>
+            </ul>
+
+        <h3>Personas</h3>
+        <div class="grid personas-grid">
+            <div class="persona card">
+                <div class="avatar"><img src="images/emily.png" alt="Emily"></div>
+                <h4 class="persona-name">Emily</h4>
+                <p class="persona-role">Adult with Diabetes</p>
+            </div>
+            <div class="persona card">
+                <div class="avatar"><img src="images/dr.png" alt="Dr. Nguyen"></div>
+                <h4 class="persona-name">Dr. Nguyen</h4>
+                <p class="persona-role">Doctor</p>
+            </div>
+            <div class="persona card">
+                <div class="avatar"><img src="images/james.png" alt="James"></div>
+                <h4 class="persona-name">James</h4>
+                <p class="persona-role">Elderly Patient</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="user-journey">
+        <h2>User Journey Map</h2>
+        <img src="images/user journey.png" alt="User Journey Map">
+    </section>
+
+    <section id="wireframes">
+        <h2>Wireframes & Prototype</h2>
+        <div class="grid wireframes-grid">
+            <div class="wireframe">
+                <img src="images/wireframe-home.png" alt="Home Screen Wireframe">
+                <p>Home Screen: Overview of medications, appointments, and quick logging.</p>
+            </div>
+            <div class="wireframe">
+                <img src="images/wireframe-reminder.png" alt="Medication Reminder Wireframe">
+                <p>Medication Reminder: Set reminders and log intake.</p>
+            </div>
+        </div>
+        <p>Interactive prototype link: <a href="YOUR_FIGMA_LINK" target="_blank">View Prototype</a></p>
+    </section>
+
+    <section id="usability-testing">
+        <h2>Usability Testing</h2>
+        <ul>
+            <li><strong>Goals:</strong> Identify issues with logging medications, scheduling appointments, and messaging doctors.</li>
+            <li><strong>Participants:</strong> 5–7 users from defined personas.</li>
+            <li><strong>Tasks:</strong> Add medication, mark as taken, schedule appointment, message doctor.</li>
+            <li><strong>Feedback:</strong> Think-aloud protocol, SUS questionnaire, screen recordings.</li>
+        </ul>
+    </section>
+
+    <section id="reflection">
+        <h2>Reflection</h2>
+        <p>The UX process highlighted critical user needs, informed wireframe design, and allowed iterative improvements. Challenges included balancing simplicity for older users with detailed tracking for advanced users. Iterative prototyping and testing ensured inclusivity and usability.</p>
+    </section>
+
+    
+
+    <footer class="site-footer">
+        <p>Sitherankan Sinnappu — SOEN 357 Mini Project</p>
+    </footer>
+
+    <!-- Persona fullscreen modal -->
+    <div id="personaModal" class="persona-modal" aria-hidden="true">
+        <div class="persona-modal-content" role="dialog" aria-modal="true" aria-labelledby="personaModalName">
+            <button class="modal-close" aria-label="Close persona viewer">✕</button>
+            <div class="persona-modal-body">
+                <img id="personaModalImg" src="" alt="Persona large view">
+                <div class="persona-modal-meta">
+                    <h3 id="personaModalName"></h3>
+                    <p id="personaModalRole"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const images = [
+            { src: 'images/age.png', name: 'Age Distribution' },
+            { src: 'images/gender.png', name: 'Gender Distribution' },
+            { src: 'images/chronic.png', name: 'Chronic Health Condition' },
+            { src: 'images/results.png', name: 'Condition Distribution' },
+            { src: 'images/app.png', name: 'Current management' },
+            { src: 'images/freq.png', name: 'How often do they forget' },
+            { src: 'images/feat.png', name: 'Features' },
+            { src: 'images/rem.png', name: 'Reminder Settings' },
+            { src: 'images/comm.png', name: 'Communication Features' }
+            
+        ];
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            document.getElementById('carouselImage').src = images[currentIndex].src;
+            document.getElementById('imageName').textContent = images[currentIndex].name;
+            document.getElementById('currentImage').textContent = currentIndex + 1;
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateCarousel();
+        }
+
+        function previousImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateCarousel();
+        }
+
+        // Initialize
+        updateCarousel();
+
+        // Persona fullscreen modal: open on click / keyboard, close on Escape or click outside
+        (function(){
+            const personaCards = Array.from(document.querySelectorAll('.persona.card'));
+            const modal = document.getElementById('personaModal');
+            const modalImg = document.getElementById('personaModalImg');
+            const modalName = document.getElementById('personaModalName');
+            const modalRole = document.getElementById('personaModalRole');
+            const modalClose = document.querySelector('.modal-close');
+            if(!personaCards.length || !modal) return;
+
+            function openModal(imgSrc, name, role){
+                modalImg.src = imgSrc;
+                modalName.textContent = name;
+                modalRole.textContent = role;
+                modal.classList.add('open');
+                modal.setAttribute('aria-hidden','false');
+                modalClose.focus();
+            }
+
+            function closeModal(){
+                modal.classList.remove('open');
+                modal.setAttribute('aria-hidden','true');
+                modalImg.src = '';
+            }
+
+            personaCards.forEach(card => {
+                card.setAttribute('tabindex','0');
+                card.addEventListener('click', (e) => {
+                    const img = card.querySelector('.avatar img');
+                    const name = card.querySelector('.persona-name')?.textContent || '';
+                    const role = card.querySelector('.persona-role')?.textContent || '';
+                    openModal(img ? img.src : '', name, role);
+                });
+
+                card.addEventListener('keydown', (e) => {
+                    if(e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        const img = card.querySelector('.avatar img');
+                        const name = card.querySelector('.persona-name')?.textContent || '';
+                        const role = card.querySelector('.persona-role')?.textContent || '';
+                        openModal(img ? img.src : '', name, role);
+                    }
+                });
+            });
+
+            modalClose.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if(e.target === modal) closeModal();
+            });
+
+            window.addEventListener('keydown', (e) => {
+                if(e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+            });
+        })();
+    </script>
+</body>
+</html>
