@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Companion Super App - UX/UI Case Study</title>
+    <title>Health Track</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -12,13 +12,12 @@
     <header class="site-header">
         <div class="container header-inner">
             <div class="brand">
-                <h1>Health Companion</h1>
-                <p class="tagline">UX/UI Case Study — Chronic Health Management</p>
+                <h1>Health Track</h1>
             </div>
             <nav class="main-nav">
                 <a href="#overview">Overview</a>
-                <a href="#survey">Survey</a>
-                <a href="#survey-results">Results</a>
+                <a href="#user-research">User Research</a>
+                <a href="#user-journey">User Journey</a>
                 <a href="#wireframes">Wireframes</a>
                 <a href="#reflection">Reflection</a>
             </nav>
@@ -76,11 +75,6 @@
                 <p class="persona-role">Adult with Diabetes</p>
             </div>
             <div class="persona card">
-                <div class="avatar"><img src="images/dr.png" alt="Dr. Nguyen"></div>
-                <h4 class="persona-name">Dr. Nguyen</h4>
-                <p class="persona-role">Doctor</p>
-            </div>
-            <div class="persona card">
                 <div class="avatar"><img src="images/james.png" alt="James"></div>
                 <h4 class="persona-name">James</h4>
                 <p class="persona-role">Elderly Patient</p>
@@ -90,22 +84,39 @@
 
     <section id="user-journey">
         <h2>User Journey Map</h2>
-        <img src="images/user journey.png" alt="User Journey Map">
+        <img src="images/emily uj.png" alt="User Journey Map">
+        <img src="images/james uj.png" alt="User Journey Map">
     </section>
 
     <section id="wireframes">
-        <h2>Wireframes & Prototype</h2>
+        <h2>Sketches & Wireframes & Prototypes</h2>
         <div class="grid wireframes-grid">
-            <div class="wireframe">
-                <img src="images/wireframe-home.png" alt="Home Screen Wireframe">
-                <p>Home Screen: Overview of medications, appointments, and quick logging.</p>
+            <div class="wireframe-card card">
+                <figure class="sketch-figure">
+                    <img src="images/sketch.png" alt="Hand Sketches" class="sketch-img">
+                </figure>
+                <strong>Hand Sketches</strong>
+                        <span>Low-fidelity concept explorations and layout ideas.</span>
+                <a class="btn-outline" href="images/sketch.png" target="_blank">View full sketch</a>
+
+                <figure class="wireframe-figure">
+                    <img src="images/wireframe.png" alt="Medication Reminder Wireframe" class="wireframe-img">
+                </figure>
+                <strong>Digital Wireframe</strong>
+                        <span>Mid-fidelity screens for reminders, logging, and appointments.</span>
+                <a class="btn-outline" href="images/wireframe.png" target="_blank">View full wireframe</a>
             </div>
-            <div class="wireframe">
-                <img src="images/wireframe-reminder.png" alt="Medication Reminder Wireframe">
-                <p>Medication Reminder: Set reminders and log intake.</p>
+
+            <div class="wireframe-card card">
+            
+                <div style="width:100%;max-width:600px;margin:1rem auto 0 auto;">
+                    <img src="images/prototype.png" width="100%" height="1010" style="border-radius:12px;border:1px solid #e5e7eb;box-shadow:0 4px 16px rgba(0,0,0,0.08);" allowfullscreen>
+                    <strong>Functional Prototype</strong><br>
+                        <span>Clickable prototype that demonstrates the main features and user flow of the app  </span>
+                        <a class="btn-outline" href="https://www.figma.com/make/wYDfOInsUqMTVeipEnuPp2/HealthTrack?p=f&t=rNQ485y6TwhNQfLP-0&fullscreen=1&preview-route=%2Fdashboard" target="_blank">View full prototype</a>
+                </div>
             </div>
         </div>
-        <p>Interactive prototype link: <a href="YOUR_FIGMA_LINK" target="_blank">View Prototype</a></p>
     </section>
 
     <section id="usability-testing">
@@ -177,7 +188,7 @@
         // Initialize
         updateCarousel();
 
-        // Persona fullscreen modal: open on click / keyboard, close on Escape or click outside
+        // Persona fullscreen modal
         (function(){
             const personaCards = Array.from(document.querySelectorAll('.persona.card'));
             const modal = document.getElementById('personaModal');
