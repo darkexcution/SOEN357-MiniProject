@@ -1,1 +1,17 @@
+HealthTrack is a mobile app concept designed to support individuals with chronic conditions by helping them manage medications, schedule doctor appointments, 
+and communicate with healthcare professionals. This project documents the full UX/UI design process, including user research, personas, journey mapping, sketches, 
+wireframes, mid-fidelity prototypes, and usability testing.
 
+Full Report: https://docs.google.com/document/d/1yvEAhc1xnIcxxmmeDbfZ_4sBT3F7soBteTksE_UeEGI/edit?usp=sharing
+
+To run the project in VS Code 
+
+1. Install Visual Studio Code (VS Code).
+
+2. In VS Code, go to Extensions → search for Live Server → click Install.
+
+3. Open your project folder in VS Code.
+
+4. Right-click your index.html file.
+
+5. Select “Open with Live Server.”
